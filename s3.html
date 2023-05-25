@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Проект Щербина Ростислава 9-А класс</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0F0;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .terminal {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #000;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+        }
+        
+        .text {
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            0% {
+                color: #0F0;
+                text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+            }
+            100% {
+                color: #00FF00;
+                text-shadow: 0 0 10px rgba(0, 255, 0, 1), 0 0 20px rgba(0, 255, 0, 0.8), 0 0 30px rgba(0, 255, 0, 0.6), 0 0 40px rgba(0, 255, 0, 0.4), 0 0 50px rgba(0, 255, 0, 0.2);
+            }
+        }
+    </style>
+</head>
+<body>
+ <style>
+        .panel {
+            display: flex;
+            justify-content: center;
+            background-color: #000;
+            padding: 20px;
+        }
+        
+        .panel a {
+            color: #0F0;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px;
+            border: 1px solid #0F0;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .panel a:hover {
+            color: #00FF00;
+            background-color: #0F0;
+        }
+    </style>
+	<div class="panel">
+		<a href="s1.html">Главная страница</a>
+	    <a href="s2.html">Основы понимания сетей</a>
+	    <a href="s3.html">Введение в линукс</a>
+	    <a href="s4.html">Команды для сетевых соединений и nmap</a>
+	    <a href="s5.html">Page 5</a>
+	</div>
+    <div class="terminal">
+        <pre class="text">
+        .--.
+       |o_o |
+       |:_/ |
+      //   \ \
+     (|     | )
+    /'\_   _/`\
+    \___)=(___/
+
+
+ Линукс это прям MUST HAVE для каждого. Для быстрого въезжания в суть вопроса обычно советуют поставить любимый школьниками Kali Linux.
+
+ Пока я пройдусь лишь по основным командам:
+
+ PWD - эта команда выводит на экран полный путь к текущем каталогу. Используя её можно узнать где ты сейчас находишься, если заблудишься.
+
+ ls - команда выводит список файлов и подкаталогов указанного каталога. Чтобы вывести файлы имена которых скрыты надо указать ключ -a
+ ls -a
+ А чтобы помимо имен увидеть и полную информацию о файлах, нужно добавить ключ -l. И у нас выйдет команда:
+ ls -al
+
+ Cat - команда cat позволяет вывести содержимое указанного файла. Чтобы вывести содержимое например test.txt надо выполнить следующую команду: cat test.txt
+
+ Tac - команда обратная команде cat она выводит на экран файл в обратном порядке, начиная с последней строки до первой.
+
+ cd - команда cd позволяет сменить текущий каталог. Для этого необходимо в качестве параметра задать нужную папку:
+ cd /home/music
+
+ cp - команда для копирования файла. С её помощью можно:
+ 	>>>Копировать содержимое файла в другой документ той же папки:
+ 	  cp /home/test/example1.txt /home/test/example2.txt
+ 	>>>Копировать файл в другой каталог:
+ 	  cp /home/test/example.txt /home/test2/example.txt
+ 	>>>Копировать несколько файлов в новый каталог:
+ 	  cp /home/test/example1.txt /home/test/example2.txt /home/neotest
+
+ mkdir - Создание нового каталога. Например, чтобы создать новый подкаталог example в текущем каталоге, нужно выполнить команду:
+ 	$ mkdir example
+ Маски:
+ 	-d - удалить каталог
+ 	-r - рекурсивно удалять содержимое каталогов
+ 	-f - не запрашивать подтверждение на удаление файлов
+
+ df - этак команда позволяет узнать объем свободного места на жестком диске или разделе.
+
+  
+        </pre>
+    </div>
+</body>
+</html>
